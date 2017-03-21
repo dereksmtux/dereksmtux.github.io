@@ -3,3 +3,11 @@ body {
   color: white;
   text-align: center;
 }
+div.left{
+  width: 45%;
+  float: left;
+}
+div.right {
+  width: 45%;
+  float: right;
+}
