@@ -9,18 +9,19 @@
   <p> Well first you must ask yourself what do you plan on doing?</p>
 <div class="main">
   <div class="left" >
-    <p class="back-button"> Back</p>
+    <p class="back-button" onclick="backButton('.left', '.right', '#gaming-icon')"> Back</p>
     <p class="option">
       Gaming
     </p>
-     <img  src="gaming.png" class="choice" id="gaming-icon"/>
+     <img  src="gaming.png" class="choice" id="gaming-icon" onclick="choose('.left', '#gaming-icon', '.right')"/>
   </div>
 
   <div class="right">
+    <p class="back-button" onclick="backButton('.right', '.left', '#code')"> Back</p>
     <p class="option">
       Coding
     </p>
-   <img src="code.png" class= "choice" id="code" />
+   <img src="code.png" class= "choice" id="code" onclick="choose('.right', '#code', '.left')" />
 </div>
 </div>
 

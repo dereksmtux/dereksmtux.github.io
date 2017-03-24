@@ -3,30 +3,32 @@ function main(){
   $('.main').hide();
   $('.back-button').hide();
   $('.main').fadeIn(1500);
-  //on click for gaming icon
-  $("#gaming-icon").on('click',  function() {
-    //resizes element
-    $('.left').width('70%');
-    $('#gaming-icon').width('25%')
-    //gets rid of the left element TO DO
-    $('.right').toggle();
-    $('.back-button').toggle();
 
-  });
-// backbutton event handler
-$('.back-button').on('click', function() {
-  changeSize('.left', '25%', '85%');
-  $('.right').toggle();
-  $('.back-button').toggle();
-});
+
+// abstracted backbutton event handler
 }
+  function backButton(classToResize, classToToggle, iconToChange) {
+    changeSize( classToResize, '25%', iconToChange)
+    $(classToToggle).toggle();
+    $('.back-button').toggle();
+  }
+
+
+
 
 //function for resizing
-function changeSize(tag, size, iconSize) {
+function changeSize(tag, size, icon) {
 
   $( tag ).width( size );
-  $('#gaming-icon').width(iconSize);
+  $(icon).width('85%');
 
 }
+//abstracted function for resizing the option window
+function choose(classToShow, iconForClass, classToHide){
+    $(classToHide).toggle();
+    $(classToShow).width('75%');
+    $(iconForClass).width('25%');
+    $('.back-button').toggle();
 
+}
 $(document).ready(main);
