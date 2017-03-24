@@ -1,21 +1,20 @@
 body {
-  background-color: #ddd;
+  background-color: #d5dddd;
   color: black;
   text-align: center;
   font-size: 24px;
 }
 div.left{
-  width: 45%;
+  width: 40%;
   float: left;
-  background-color: rgba(155, 15, 155, 0.65);
+  background-color: rgba(140, 15, 140, 0.65);
   border-radius: 7px;
 }
 div.right {
-  width: 45%;
-  height: 500px;
+  width: 40%;
   float: right;
   border-radius: 7px;
-  background-color: rgba(195, 180, 0, 0.65);
+  background-color: rgba(195, 10, 0, 0.65);
 }
 p.option {
   font-size: 28px;
@@ -33,6 +32,6 @@ img.choice:hover {
 
 }
 img.choice {
-  width: 95%;
+  width: 85%;
   margin-bottom: 10%;
 }
