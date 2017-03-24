@@ -1,10 +1,16 @@
 function main(){
+  //fade in for the side
   $('.main').hide();
+  $('.back-button').hide();
   $('.main').fadeIn(1500);
   //on click for gaming icon
-  $("#gaming").on('click',  function() {
+  $(".left").on('click',  function() {
+    //resizes element
     $('.left').width('70%');
-    $('#gaming').width('25%')
+    $('#gaming-icon').width('25%')
+    //gets rid of the left element TO DO 
+    $('.right').toggle();
+    $('.back-button').toggle();
 
   });
 
