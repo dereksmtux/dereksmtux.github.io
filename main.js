@@ -8,9 +8,8 @@ function main(){
 
 }
 // abstracted backbutton event handler
-
   function backButton(classToResize, classToToggle, iconToChange) {
-    changeSizeBack( classToResize, '25%', iconToChange)
+    changeSizeBack( classToResize, iconToChange)
     $(classToToggle).toggle();
     $('.back-button').toggle();
     $('.content').toggle();
@@ -19,14 +18,14 @@ function main(){
 
 
 
-//function for resizing back to original
-function changeSizeBack(tag, size, icon) {
+//function for resizing a choise element back to original
+function changeSizeBack(tag, icon) {
 
-  $( tag ).width( size );
+  $( tag ).width('25%');
   $(icon).width('85%');
 
 }
-//abstracted function for resizing the option window
+//abstracted function for expandingthe option window
 function choose(classToShow, iconForClass, classToHide){
     $(classToHide).toggle();
     $(classToShow).width('75%');
