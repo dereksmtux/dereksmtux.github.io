@@ -32,7 +32,7 @@ $('.back-button').on('click', function(){
   $('.section').toggle();
   $(this).parent().toggle();
   $(this).parent().toggleClass('clicked');
-  $(this).siblings().toggleClass('clicked');
+  $(this).next().next().toggleClass('clicked');
   $('.content').toggle();
   $('.back-button').toggle();
 
