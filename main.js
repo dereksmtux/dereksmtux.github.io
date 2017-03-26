@@ -4,8 +4,6 @@ function main(){
   $('.back-button').hide();
   $('.content').toggle();
   $('.main').fadeIn(1500);
-
-
 }
 // abstracted backbutton event handler
   function backButton(classToResize, classToToggle, iconToChange) {
