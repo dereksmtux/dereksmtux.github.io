@@ -5,31 +5,15 @@ function main(){
   $('.content').toggle();
   $('.main').fadeIn(1500);
 }
-// abstracted backbutton event handler
-  function backButton(classToResize, classToToggle, iconToChange) {
-    changeSizeBack( classToResize, iconToChange)
-    $(classToToggle).toggle();
-    $('.back-button').toggle();
-    $('.content').toggle();
-  }
 
+//better choose function
+$('.section').on('click', function(){
+  $('.section').toggle();
+  $(this).toggle();
+  $('.choice').toggleClass('clicked');
+  $(this).toggleClass('clicked');
+  $('.content').toggle();
+  $('.back-button').toggle();
+});
 
-
-
-//function for resizing a choise element back to original
-function changeSizeBack(tag, icon) {
-
-  $( tag ).width('25%');
-  $(icon).width('85%');
-
-}
-//abstracted function for expandingthe option window
-function choose(classToShow, iconForClass, classToHide){
-    $(classToHide).toggle();
-    $(classToShow).width('75%');
-    $(iconForClass).width('25%');
-    $('.content').toggle();
-    $('.back-button').toggle();
-
-}
 $(document).ready(main);

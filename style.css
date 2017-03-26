@@ -38,3 +38,11 @@ img.choice {
 img.content {
   width: 15%;
 }
+
+div.clicked {
+  width: 75%;
+
+}
+img.clicked {
+  width: 25%;
+}
