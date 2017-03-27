@@ -46,6 +46,7 @@ div.clicked {
 }
 img.clicked {
   width: 25%;
+  margin-bottom: 0%;
 }
 p.content {
   font-size: 22px;
