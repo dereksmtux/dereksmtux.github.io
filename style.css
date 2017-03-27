@@ -1,0 +1,52 @@
+body {
+  background-color: #d5dddd;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+}
+div.left{
+  width: 25%;
+  float: left;
+  background-color: rgba(140, 15, 140, 0.65);
+  border-radius: 7px;
+  margin-left: 12%;
+  font-size: 29px;
+}
+div.right {
+  width: 25%;
+  float: right;
+  border-radius: 7px;
+  background-color: rgba(195, 10, 0, 0.65);
+  margin-right: 12%;
+  font-size: 29px;
+}
+p.option {
+  font-size: 28px;
+}
+p.back-button {
+  float: right;
+  background-color: rgba(200, 0, 0, 0.5);
+  margin-right: 5%;
+  padding: 3px;
+  border: solid black 2px;
+  border-radius: 7px;
+  font-size: 30px;
+}
+img.choice {
+  width: 85%;
+  margin-bottom: 10%;
+}
+img.content {
+  width: 15%;
+}
+
+div.clicked {
+  width: 75%;
+
+}
+img.clicked {
+  width: 25%;
+}
+p.content {
+  font-size: 22px;
+}
