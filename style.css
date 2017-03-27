@@ -46,3 +46,6 @@ div.clicked {
 img.clicked {
   width: 25%;
 }
+p.content {
+  font-size: 22px;
+}
