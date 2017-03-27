@@ -30,6 +30,7 @@ p.back-button {
   padding: 3px;
   border: solid black 2px;
   border-radius: 7px;
+  font-size: 30px;
 }
 img.choice {
   width: 85%;
