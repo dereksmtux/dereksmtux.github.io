@@ -12,7 +12,7 @@ $('.choice').on('click', function(){
   $(this).parent().toggle();
   $(this).parent().toggleClass('clicked', 300);
   $(this).toggleClass('clicked')
-  $('.content').toggle();
+  $('.content').slideToggle();
   $('.back-button').toggle();
 });
 
