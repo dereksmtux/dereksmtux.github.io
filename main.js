@@ -10,24 +10,21 @@ function main(){
 $('.choice').on('click', function(){
   $('.section').toggle();
   $(this).parent().toggle();
-  $(this).parent().toggleClass('clicked', 300);
+  $(this).parent().toggleClass('clicked', 400);
   $(this).toggleClass('clicked')
-  $('.content').slideToggle();
+  $('.content').toggle();
   $('.back-button').toggle();
 });
 
 //event handler for the back back-button
 $('.back-button').on('click', function(){
-
+  $('.section').toggle();
+  $(this).parent().toggle();
   $(this).parent().toggleClass('clicked');
-
-
   $(this).next().next().toggleClass('clicked');
   $('.content').toggle();
   $('.back-button').toggle();
 
-  $(this).parent().toggle();
-  $('.section').toggle(300);
 });
 
 $(document).ready(main);
