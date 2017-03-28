@@ -18,12 +18,13 @@ $('.choice').on('click', function(){
 
 //event handler for the back back-button
 $('.back-button').on('click', function(){
-  $('.section').toggle();
-  $(this).parent().toggle();
+
   $(this).parent().toggleClass('clicked');
   $(this).next().next().toggleClass('clicked');
   $('.content').toggle();
   $('.back-button').toggle();
+  $('.section').toggle(100);
+  $(this).parent().toggle(100);
 
 });
 
