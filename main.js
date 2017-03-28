@@ -23,8 +23,9 @@ $('.back-button').on('click', function(){
   $(this).next().next().toggleClass('clicked');
   $('.content').toggle();
   $('.back-button').toggle();
-  $('.section').toggle(100);
-  $(this).parent().toggle(100);
+  $('.section').hide();
+  $('.section').toggle(200);
+  //$(this).parent().toggle(50);
 
 });
 
