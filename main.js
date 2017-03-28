@@ -27,7 +27,7 @@ $('.back-button').on('click', function(){
   $('.back-button').toggle();
 
   $(this).parent().toggle();
-  $('.section').slideToggle(300);
+  $('.section').toggle(300);
 });
 
 $(document).ready(main);
