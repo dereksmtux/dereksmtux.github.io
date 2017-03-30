@@ -4,6 +4,9 @@ body {
   text-align: center;
   font-size: 24px;
 }
+div.main {
+  display: none;
+}
 div.left{
   width: 25%;
   float: left;
